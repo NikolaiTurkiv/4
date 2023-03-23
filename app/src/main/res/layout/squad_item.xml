@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imPlayer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvPlayerName"
+            style="@style/squad_text_style"
+            app:layout_constraintEnd_toStartOf="@+id/squadGuideline"
+            app:layout_constraintStart_toEndOf="@+id/imPlayer"
+            app:layout_constraintTop_toTopOf="@+id/imPlayer"
+            tools:text="Player Name" />
+
+        <TextView
+            android:id="@+id/tvPlayerPosition"
+            style="@style/squad_text_style"
+            app:layout_constraintEnd_toStartOf="@+id/squadGuideline"
+            app:layout_constraintStart_toEndOf="@+id/imPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlayerName"
+            tools:text="Defender" />
+
+        <TextView
+            android:id="@+id/tvCountry"
+            style="@style/squad_text_style"
+            app:layout_constraintEnd_toStartOf="@+id/squadGuideline"
+            app:layout_constraintStart_toEndOf="@+id/imPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlayerPosition"
+            tools:text="Scotland" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/squadGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <TextView
+            android:id="@+id/tvWeightTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="@string/weight"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toEndOf="@+id/squadGuideline"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayerName" />
+
+        <TextView
+            android:id="@+id/tvAgeTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="@string/age"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="@+id/tvWeightTitle" />
+
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="63kg"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toEndOf="@+id/squadGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/tvWeightTitle" />
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="62"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/tvAgeTitle" />
+
+        <TextView
+            android:id="@+id/tvHeightTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="end"
+            android:text="@string/height"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/squadGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/tvWeight" />
+
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            tools:text="1.98m"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginStart="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/tvAge" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.83" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

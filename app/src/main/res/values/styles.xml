@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="home_title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/montserrat_extrabolditalic</item>
+    </style>
+
+    <style name="home_command_info">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#4C4B4B</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/montserrat_bolditalic</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <style name="squad_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:fontFamily">@font/montserrat_semibolditalic</item>
+    </style>
+
+
+    <style name="bold_field_table_item">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

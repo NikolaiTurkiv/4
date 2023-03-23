@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="overview">Overview</string>
+    <string name="name">Name:</string>
+    <string name="full_name">Full name:</string>
+    <string name="nickname_s">NickName(s):</string>
+    <string name="founded">Founded:</string>
+    <string name="website">Website:</string>
+    <string name="venue">Venue</string>
+    <string name="capacity">Capacity:</string>
+    <string name="management">Management</string>
+    <string name="manager">Manager:</string>
+    <string name="chairman">Chairman:</string>
+    <string name="weight">Weight</string>
+    <string name="age">Age</string>
+    <string name="height">Height</string>
+    <string name="number">№</string>
+    <string name="team">Team</string>
+    <string name="p">P</string>
+    <string name="w">W</string>
+    <string name="d">D</string>
+    <string name="l">L</string>
+    <string name="pl_min">+/-</string>
+    <string name="championship">Championship</string>
+    <string name="choose_team">SEARCH YOUR TEAM</string>
+
+    <string name="fixtures">Fixtures</string>
+    <string name="home">Home</string>
+    <string name="results">Results</string>
+    <string name="squad">Squad</string>
+    <string name="league">League</string>
+</resources>

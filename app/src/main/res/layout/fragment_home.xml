@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_gray_light"
+    tools:context=".ui.screens.HomeFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_overView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/montserrat_extrabolditalic"
+                android:text="@string/overview"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imTeamLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imTeamLabel"
+                app:layout_constraintTop_toTopOf="@+id/imTeamLabel"
+                tools:viewBindingIgnore="true" />
+
+            <View
+                android:id="@+id/viewDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imTeamLabel" />
+
+            <ImageView
+                android:id="@+id/imTeamLabel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tvCommandNameTitle"
+                style="@style/home_title_text"
+                android:text="@string/name"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/viewDivider"
+                tools:viewBindingIgnore="true" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <TextView
+                android:id="@+id/tvTeamName"
+                style="@style/home_command_info"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCommandNameTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/tvCommandNameTitle"
+                tools:text="Arsenal" />
+
+            <TextView
+                android:id="@+id/tvFullNameTitle"
+                style="@style/home_title_text"
+                android:text="@string/full_name"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/tvCommandNameTitle"
+                tools:viewBindingIgnore="true" />
+
+            <TextView
+                android:id="@+id/tvFullName"
+                style="@style/home_command_info"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFullNameTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvFullNameTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvFullNameTitle"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/tvNickNamesTitle"
+                style="@style/home_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nickname_s"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/tvFullNameTitle"
+                tools:viewBindingIgnore="true" />
+
+            <TextView
+                android:id="@+id/tvNickNames"
+                style="@style/home_command_info"
+                app:layout_constraintBottom_toBottomOf="@+id/tvNickNamesTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/tvNickNamesTitle"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/tvFoundedTitle"
+                style="@style/home_title_text"
+                android:text="@string/founded"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/tvNickNamesTitle"
+                tools:viewBindingIgnore="true" />
+
+            <TextView
+                android:id="@+id/tvWebsiteTitle"
+                style="@style/home_title_text"
+                android:text="@string/website"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/tvFoundedTitle"
+                tools:viewBindingIgnore="true" />
+
+            <TextView
+                android:id="@+id/tvFounded"
+                style="@style/home_command_info"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFoundedTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/tvFoundedTitle"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/tvWebsite"
+                style="@style/home_command_info"
+                app:layout_constraintBottom_toBottomOf="@+id/tvWebsiteTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/tvWebsiteTitle"
+                tools:text="TextView" />
+
+            <View
+                android:id="@+id/viewGeneralInfo"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/tvWebsite" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/additionalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvVen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/montserrat_extrabolditalic"
+                android:text="@string/venue"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:viewBindingIgnore="true" />
+
+            <View
+                android:id="@+id/viewAddInfo"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVen" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <TextView
+                android:id="@+id/tvVenueTitle"
+                style="@style/home_title_text"
+                android:text="@string/name"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/viewAddInfo"
+                tools:viewBindingIgnore="true" />
+
+            <TextView
+                android:id="@+id/tvCapacityTitle"
+                style="@style/home_title_text"
+                android:text="@string/capacity"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/tvVenueTitle"
+                tools:viewBindingIgnore="true" />
+
+            <TextView
+                android:id="@+id/tvVenue"
+                style="@style/home_command_info"
+                app:layout_constraintBottom_toBottomOf="@+id/tvVenueTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/tvVenueTitle"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/tvCapacity"
+                style="@style/home_command_info"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCapacityTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/tvCapacityTitle"
+                tools:text="TextView" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCapacityTitle" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/additionalInfo">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvManagment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/montserrat_extrabolditalic"
+                android:text="@string/management"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:viewBindingIgnore="true" />
+
+            <View
+                android:id="@+id/viewManagement"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvManagment" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <TextView
+                android:id="@+id/tvManagerTitle"
+                style="@style/home_title_text"
+                android:text="@string/manager"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/viewManagement"
+                tools:viewBindingIgnore="true" />
+
+            <TextView
+                android:id="@+id/tvChairManTitle"
+                style="@style/home_title_text"
+                android:text="@string/chairman"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/tvManagerTitle"
+                tools:viewBindingIgnore="true" />
+
+            <TextView
+                android:id="@+id/tvManager"
+                style="@style/home_command_info"
+                app:layout_constraintBottom_toBottomOf="@+id/tvManagerTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvManagerTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvManagerTitle"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/tvChairman"
+                style="@style/home_command_info"
+                app:layout_constraintBottom_toBottomOf="@+id/tvChairManTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvChairManTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvChairManTitle"
+                tools:text="TextView" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/tvChairman" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
