@@ -109,14 +109,14 @@ class WebViewFragment : Fragment(R.layout.fragment_web_view) {
              true
         }
 
-        binding.webView.setOnTouchListener { view, motionEvent ->
-            if(motionEvent.action == MotionEvent.ACTION_CANCEL){
-                handleURI((view as WebView).hitTestResult.extra)
-            }
-            Log.d("EEVENT", motionEvent.action.toString())
-
-            false
-        }
+//        binding.webView.setOnTouchListener { view, motionEvent ->
+//            if(motionEvent.action == MotionEvent.ACTION_CANCEL){
+//                handleURI((view as WebView).hitTestResult.extra)
+//            }
+//            Log.d("EEVENT", motionEvent.action.toString())
+//
+//            false
+//        }
 
         if(args.site.isNotEmpty())
         binding.webView.loadUrl(args.site)
