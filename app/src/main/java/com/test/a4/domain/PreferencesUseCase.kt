@@ -4,9 +4,9 @@ class PreferencesUseCase(
     private val preferencesRepository: PreferencesRepository
 ) {
 
-    val name = preferencesRepository.actualName
+    val uniqID = preferencesRepository.id
 
-    fun saveName(name:String){
-        preferencesRepository.saveActualName(name)
+    fun saveId(id:String){
+        preferencesRepository.saveId(id)
     }
 }

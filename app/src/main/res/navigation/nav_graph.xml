@@ -26,6 +26,10 @@
         android:name="com.test.a4.ui.screens.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" >
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue=""/>
         <action
             android:id="@+id/action_searchFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -40,6 +44,10 @@
         android:name="com.test.a4.ui.screens.WebViewFragment"
         android:label="fragment_web_view"
         tools:layout="@layout/fragment_web_view" >
+        <argument
+            android:name="site"
+            app:argType="string"
+            android:defaultValue=""/>
         <action
             android:id="@+id/action_webViewFragment_to_searchFragment"
             app:destination="@id/searchFragment" />

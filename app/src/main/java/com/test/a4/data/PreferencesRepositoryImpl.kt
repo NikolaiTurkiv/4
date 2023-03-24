@@ -10,18 +10,18 @@ class PreferencesRepositoryImpl @Inject constructor(
 
     companion object{
         private const val DAGGER_SHARED_PREF = "DAGGER_SHARED_PREF"
-        private const val NAME = "NAME"
+        private const val ID = "ID"
      }
 
 
     private var sharedPreferences =
         context.getSharedPreferences(DAGGER_SHARED_PREF, Context.MODE_PRIVATE)
 
-    override val actualName: String
-        get() = sharedPreferences.getString(NAME,"") ?: ""
+    override val id: String
+        get() = sharedPreferences.getString(ID,"") ?: ""
 
-    override fun saveActualName(name: String) {
-        sharedPreferences.edit().putString(NAME,name).apply()
+    override fun saveId(id: String) {
+        sharedPreferences.edit().putString(ID,id).apply()
     }
 
 }
