@@ -1,4 +1,4 @@
-package com.test.a2.data
+package com.test.a4.data
 
 import android.content.Context
 import com.test.a4.domain.PreferencesRepository

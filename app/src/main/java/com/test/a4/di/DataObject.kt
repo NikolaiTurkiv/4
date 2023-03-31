@@ -3,7 +3,7 @@ package com.test.a4.di
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.room.Room
-import com.test.a2.data.PreferencesRepositoryImpl
+import com.test.a4.data.PreferencesRepositoryImpl
 import com.test.a4.domain.PreferencesRepository
 import com.test.a4.data.DatabaseRepositoryImpl
 import com.test.a4.data.network.NetworkApi
